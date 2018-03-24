@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>13-4</title>
+	<style>
+		#mycanvas{background-color:skyblue;}
+	</style>
+</head>
+
+<body>
+	<canvas id=mycanvas width=600 height=600></canvas>
+
+	<script>
+		var mycanvas = document.getElementById("mycanvas");
+		var c = mycanvas.getContext("2d");
+		//ここに初期化のソースを書き込みましょう
+
+		var count = 0;
+		var x = 300;
+		var muki = 1;
+
+		//ここにアニメーションのソースを書き込みましょう
+
+		var mytimer = setInterval(anime, 50);
+
+		function anime(){
+			//①消去-----------------------------
+			c.clearRect(0, 0, 600, 600);
+			
+			//②状態保存＋変形----------------------
+			c.save();
+			c.translate(x,300);		//移動する
+			c.scale(1,0.5);			//伸縮する
+			c.rotate(50+count/180*Math.PI);	//回転する
+
+			//③(0,0)を中心としたキャラクタを描画------
+			c.beginPath();
+			c.moveTo(0,0);
+			c.arc(0, 0, 100, 0, 1.5*Math.PI, false);
+			c.closePath();
+			c.fillStyle = "yellow";
+			c.fill();
+		
+			//④状態復帰
+			c.restore();
+			
+			//⑤次の状態の計算----------------------
+			x = x+muki;
+			if(x<100 || 500<x){muki *= -1;};
+			count++;
+		}	
+
+	</script>
+</body>
+</html>

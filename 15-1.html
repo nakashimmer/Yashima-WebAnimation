@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>15-1</title>
+
+	<style>
+		canvas{border:1px solid gray;}
+	</style>
+</head>
+
+<body>
+	<canvas id="mycanvas" width="300" height="300"></canvas>
+
+<script src="sample15.js"></script>
+
+<script>
+
+	//メインプログラム
+	setInterval(anime,50);
+
+//初期化
+var eye = {x:150, y:130, dx:1};
+
+	function anime(){
+
+		frame++;
+		//①画面クリア
+		c.clearRect(0,0, canvas.width, canvas.height);
+
+		//②描画
+		maru(150,150,140,"#ffe");				//輪郭
+		maru(eye.x-50, eye.y, 20, "skyblue");		//左目
+		maru(eye.x+50, eye.y, 20, "skyblue");		//右目
+		sankaku(150, 150,140,190,160,190,"green");	//鼻
+		shikaku(100,200,100,10,"pink");			//口
+		msg(100,50,30,"こんにちは");				//メッセージ
+
+		//計算
+		eye.x += eye.dx;
+		if(eye.x<120 || 180<eye.x){eye.dx *= -1;}
+	}
+</script>
+</body>
+</html>

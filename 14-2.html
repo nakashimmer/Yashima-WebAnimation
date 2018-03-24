@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title>14-2</title>
+</head>
+<body>
+<section>
+	<canvas id="mycanvas" width="300" height="300">
+		このブラウザはCanvas非対応です
+	</canvas>
+</section>
+
+<script>
+	var canvas=document.getElementById("mycanvas");
+	var c=canvas.getContext("2d");
+	var finger={x:150,y:150};
+
+
+	//ここにイベントリスナーを記述します
+
+	canvas.addEventListener("mousemove",function(e){
+
+		var rect = e.target.getBoundingClientRect();
+		finger.x = e.clientX - rect.left;
+		finger.y = e.clientY - rect.top;
+	
+		c.fillStyle="red";
+		c.fillRect(finger.x-2,finger.y-2,4,4);
+	
+	});
+
+</script>
+</body>
+</html>

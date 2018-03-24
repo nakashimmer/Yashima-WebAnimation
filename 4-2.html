@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>4-2</title>
+	
+	<style>
+	.box{
+		width:300px; height:200px; margin:50px;
+		line-height:200px; text-align:center;
+		border:1px solid gray;
+	}
+
+	.box{transition:transform 1s ease-in-out 0s;}
+
+	#box1:hover{transform:rotate(45deg);}
+	#box2:hover{transform:scale(1,2);}
+	#box3:hover{transform:skew(10deg,0deg);}
+	#box4:hover{transform:translate(100px,100px);}
+
+	#box5{transition:color 1s ease-in-out 0s,background-color 1s ease-in-out 0s;}
+	#box5:hover{color:white;background-color:red;}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="box1" class="box">回転します</div>
+	<div id="box2" class="box">伸縮します</div>
+	<div id="box3" class="box">歪みます</div>
+	<div id="box4" class="box">移動します</div>
+	<div id="box5" class="box">様々なCSSを遷移できます</div>
+
+</body>
+</html>

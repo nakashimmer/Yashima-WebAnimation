@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>11-2</title>
+	<style>
+		#mycanvas{border:1px solid gray;}
+	</style>
+</head>
+<body>
+	<canvas id="mycanvas" width="500" height="500"></canvas>
+
+	<!-- ここにJavaScript のコードを書きましょう -->
+	<script>
+	var canvas = document.getElementById("mycanvas");
+	var c = canvas.getContext("2d");
+
+	//ここに描画のソースを記述します
+
+	//グラデーション
+	var g = c.createLinearGradient(0,0, 0,250);
+	g.addColorStop(0,"red"); 
+	g.addColorStop(0.5,"green");
+	g.addColorStop(1,"blue");
+	
+	c.fillStyle = g;
+	c.fillRect(0,0, 250,250);
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>10-5</title>
+	<style>
+		#mycanvas{border:1px solid gray;}
+	</style>
+</head>
+<body>
+	<canvas id="mycanvas" width="500" height="500"></canvas>
+
+	<!-- ここにJavaScript のコードを書きましょう -->
+	<script>
+	var canvas = document.getElementById("mycanvas");
+	var c = canvas.getContext("2d");
+
+	//ここに描画のソースを記述します
+
+	//円弧
+	var angle1 = 40/180 * Math.PI ;
+	var angle2 = 300/180 * Math.PI ; 
+	
+	c.beginPath();
+	c.arc(250, 250, 200, angle1, angle2, false);
+	c.strokeStyle = "yellow"; 
+	c.lineWidth = 10;
+c.stroke();
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>15-2</title>
+
+	<style>
+		canvas{border:1px solid gray;}
+	</style>
+</head>
+
+<body>
+	<canvas id="mycanvas" width="300" height="300"></canvas>
+
+<script src="sample15.js"></script>
+
+<script>
+
+	//メインプログラム
+	setInterval(anime,50);
+
+	//初期化
+	var yashiman = {x:0, y:0};
+
+	var img=new Image();
+	img.src="sample.png";
+
+	function anime(){
+
+		frame++;
+		
+		//①画面クリア
+		c.clearRect(0,0, canvas.width, canvas.height);
+
+		//②描画+計算
+		ugoku(0, 50,0,1);
+		ugoku(50,200,1,1);
+		ugoku(200,400,1,-1);
+	}
+</script>
+</body>
+</html>
