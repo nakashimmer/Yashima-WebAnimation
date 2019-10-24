@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>タイトル</title>
+		<style>
+			div{
+				border:1px solid gray;
+				width:100px; height:100px;
+			}
+
+			#child{
+				background-image:url("yashiman.png");
+				background-size:100% 100%;
+			}
+
+			#parent{
+				transform-style:preserve-3d;
+				perspective:105px;
+				margin:200px auto;
+			}
+
+			#child{
+				animation:mystory 5s ease-in-out 0s infinite normal;
+				font-size:80px;
+				line-height:100px;
+				text-align: center;
+			}
+
+			@keyframes mystory{
+				0%{transform:scaleX(1) scaleY(0.5);}
+				50%{transform:scaleX(0.5) scaleY(1);}
+				100%{transform:scaleX(1) scaleY(0.5);}
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="parent">
+			<div id="child">🎃</div>
+		</div>
+	</body>
+
+</html>

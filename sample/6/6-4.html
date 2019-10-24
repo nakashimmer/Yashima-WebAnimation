@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>タイトル</title>
+		<style>
+			.box{
+				margin:100px auto;
+				font-size:100px;text-align:center;
+				width:150px; height:150px; line-height:150px;
+			}
+			#box1{
+				animation:anime 3s ease-in-out 0s infinite normal;
+			}
+			@keyframes anime{
+				0%{transform:scale(1,1);}
+				60%{transform:scale(1.4,1.4);}
+				100%{transform:scale(1,1);}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box" id="box1">💓</div>
+	</body>
+
+</html>
