@@ -3,19 +3,26 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>タイトル</title>
+		<title>6-2</title>
 		<style>
-			.box{	
-				margin:100px auto;
+			.box{
+				border:1px solid gray; 	/*枠線*/
+				width:200px;					/*コンテンツ横幅*/
+				height:200px; 					/*コンテンツ高さ*/
+				padding:0px;					/*内側余白*/
+				position:absolute;
+				top:0px;right:0px;bottom:0px;left:0px;
+				margin:auto;
+			}
+
+			#box1{
+				animation:anime 1s linear 0s infinite normal;
+				animation-fill-mode:both;
 				width:150px; height:150px;
 				border-color:red green blue yellow;
 				border-width:10px;
 				border-style:solid;
 				border-radius:50%;
-			}
-
-			#box1{
-				animation:anime 1s linear 0s infinite normal;
 			}
 			@keyframes anime{
 				0%{transform:rotate(0deg);}

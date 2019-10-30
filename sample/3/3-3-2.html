@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>タイトル</title>
+		<title>3-2-2</title>
 		<style>
 			*{margin:0px;padding:0px;}				/*リセットCSS*/
 
@@ -11,20 +11,20 @@
 				border:1px solid gray; 					/*枠線*/
 				width:200px;									/*コンテンツ横幅*/
 				height:200px; 								/*コンテンツ高さ*/
-				margin:50px auto; 							/*外余白*/
 				padding:0px;									/*内側余白*/
-			}
-			#box1{	
-				background-image:url(html5.png); 			/*背景画像*/
-				background-size:100% 100%;						/*背景のサイズ*/
-				filter:drop-shadow(3px 3px 3px black);		/*透過画像に影*/
-
+				position:absolute;
+				top:0px;right:0px;bottom:0px;left:0px;
+				margin:auto;
+				}
+			#box1{
+				box-shadow:3px 3px 3px gray;				/*箱の影*/
+				text-shadow:2px 2px 2px gray; 			/*テキストの影*/
 			}
 		</style>
 	</head>
 
 	<body>
-		<div class="box" id="box1"></div>
+		<div class="box" id="box1">Box1</div>
 	</body>
 
 </html>

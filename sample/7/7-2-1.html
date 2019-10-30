@@ -3,22 +3,19 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>タイトル</title>
+		<title>7-2-1</title>
 		<style>
 			div{
 				border:1px solid gray;
 				width:100px; height:100px;
 			}
 
-			#child{
-				background-image:url("yashiman.png");
-				background-size:100% 100%;
-			}
-
 			#parent{
 				transform-style:preserve-3d;
 				perspective:105px;
-				margin:200px auto;
+				position:absolute;
+				top:0px;right:0px;bottom:0px;left:0px;
+				margin:auto;
 			}
 
 			#child{
@@ -29,9 +26,8 @@
 			}
 
 			@keyframes mystory{
-				0%{transform:rotateY(40deg) scaleX(1) scaleY(0.5);}
-				50%{transform:rotateY(40deg)scaleX(0.5) scaleY(1);}
-				100%{transform:rotateY(40deg)scaleX(1) scaleY(0.5);}
+				0%{transform:rotateX(0deg) rotateY(0deg);}
+				100%{transform:rotateX(360deg) rotateY(360deg);}
 			}
 
 		</style>
