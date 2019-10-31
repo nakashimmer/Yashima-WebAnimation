@@ -55,8 +55,14 @@
 		footer a{color:white;}
 		
 		@media(max-width:600px){
-			ul{display:block;}
+			ul{display:flex;}
 			li{border:1px dotted gray;margin:1em;}
+		}
+
+		@media print{
+			ul{display:flex;}
+	
+			li{border:none;}
 		}
 
 		.big{font-size:55px;text-align:center;}
@@ -70,6 +76,7 @@
 		</header>
 
 		<main>
+			<p><a href="sozai.pdf">このページのpdfです。必要に応じ印刷してください。</a></p>
 			<section>
 				<h2>emoji</h2>
 				<p>マウスポインタで範囲指定してコピー、エディタでペーストしてください。</p>
