@@ -1,171 +1,228 @@
 <!DOCTYPE html">
-<meta charset=utf-8>
-<title>授業ページ|楽しいWebアニメーション</title>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>授業ページ|楽しいWebアニメーション</title>
 
-<style>
-	*{
-		margin:0;padding:0;
-		font-size:15px;
-		text-decoration:none;
-		list-style:none;
-	}
-	#wrap{margin:10px auto;padding:5px;max-width:500px;}
-	ol,ul{
+	<style>
+		*{
+			margin:0;padding:0;
+			font-size:16px;
+			text-decoration:none;
+			list-style:none;
+		}
+		#wrap{margin:10px auto;padding:5px;max-width:800px;}
+
 		
-	}
-	
-	li{padding:0.25em;}
-	
-	li:nth-of-type(odd){background-color:#eee;}
-
-	a{color:red}
-	a:visited{color:gray;}
-
-	header{
-		height:110px;
-		line-height:50px;
-		background-color:#666;color:#fff;
-	}
-
-	header h1{
-		font-size:1.2em;text-align:center;
-	}
-	header h2{
-		font-size:1.1em;text-align:center;
-	}
-	section>section>section{
-		margin:1em 0.5em 0em 0.5em;border:1px solid gray;
-	}
-	
-	section h1{
-		margin:1em 0 0 0;
-	}
-
-	small{font-size:0.7em;color:red;}
-</style>
-
-<div id=wrap>
-<header>
-	<h1>楽しいWebアニメーション<br>授業ページ</h1>
-</header>
-
-<main>
-
-<section class=col>
-	<section>
-		<li><a target=_blank href="https://cs264.xbit.jp/~w074265/yashima/webanime/js/index.html">練習テキストエディタ</a>
-
-	</section>
-	<section>
-		<h1>1. Webアニメーションに触れてみよう</h1>
-		<section>
-			<h2>CSSアニメーションの技術で実現できるサイト</h2>
-			<ol>
-				<li>1. <a target="_blank" href="http://www.css-spinners.com/#/spinners/">スピナー</a>
-				<li>2. <a target="_blank" href="https://lab.sonicmoov.com/markup/css/css-animation-20/">使えるCSSアニメーション20選</a>
-				<li>3. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/tictac/index.html">メトロノーム</a>
-				<li>4. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carousel/index.html">カルーセル</a>
-				<li>5. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/sakkaku/index.html">錯覚</a>
-				<li>6. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/momiji/index.html">もみじ</a>
-				<li>7. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/soccer/index.html">サッカーボール</a>
-				<li>8. <a target="_blank" href="https://tokyoappwork.shop/showcase/css3/animation/CSSSanta/index.html">CSSサンタ</a>
-<li>8. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carp/index.html">鯉のぼり</a>
-				<li>9. <a target="_blank" href="https://tokyoappwork.shop/showcase/css3/animation/3d/domino/index.html">3D①</a>
-				<li>10. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">3D②</a>
-				<li>11. <a target="_blank" href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">3Dコントロール</a>
-	
-			</ol>
-			
+		li{padding:0.25em;}
 		
-		</section>
-	</section>
-	
-	
-	<section>
-		<h1>2. 事前知識</h1>
-		<section>
-			<ol>
-				<li><a href="sample/2/2-1.html">2.1. HTMLの基本</a>
-				<li><a href="sample/2/2-2.html">2.2. CSSの基本</a>
-				<li><a href="sample/2/2-3.html">2.2. セレクタ</a>
-			</ol>
-		</section>
-	</section>
-	
-	<section>
-		<h1>3. いろいろなCSS</h1>
-		<section>
-			<ol>
-				<li><a href="sample/3/3-1.html">3.1. ボックスモデル</a>
-				<li><a href="sample/3/3-2.html">3.2. 上下中央寄せ</a>
-				<li><a href="sample/3/3-3-1.html">3.3.1. 角丸</a>
-				<li><a href="sample/3/3-3-2.html">3.3.2. 影</a>
-				<li><a href="sample/3/3-3-3.html">3.3.3. 花の模様</a>
-				<li><a href="sample/3/3-3-4.html">3.3.4. グラデーション</a>
-				<li><a href="sample/3/3-3-5.html">3.3.5. 三角形</a>
-				<li><a href="sample/3/3-4-1.html">3.4.1. 背景画像</a>
-				<li><a href="sample/3/3-4-2.html">3.4.2. 背景画像に影</a>
-			</ol>
-		</section>
-	</section>
-	
-	<section>
-		<h1>4. 変形</h1>
-		<section>
-			<ol>
-				<li><a href="sample/4/4-1.html">4.1 回転</a>
-				<li><a href="sample/4/4-2.html">4.2 伸縮</a>
-				<li><a href="sample/4/4-3.html">4.3 歪み</a>
-				<li><a href="sample/4/4-4.html">4.4 移動</a>
-				<li><a href="sample/4/4-5.html">4.5 合成</a>
-			</ol>
-		</section>
-	</section>
-	
-	
-	<section>
-		<h1>5. 遷移</h1>
-		<section>
-			<ol>
-				<li><a href="sample/5/5-1.html">5.1. CSS+トランジション</a>
-				<li><a href="sample/5/5-2.html">5.2. 変形+トランジション</a>
-			</ol>
-		</section>
-	</section>
-	
-	<section>
-		<h1>6. アニメーション</h1>
-		<section>
-			<ol>
-				<li><a href="sample/6/6-1.html">6.1. 基本的な記述</a>
-				<li><a href="sample/6/6-2.html">6.2. スピナー</a>
-				<li><a href="sample/6/6-3.html">6.3. カルーセル</a>
-				<li><a href="sample/6/6-4.html">6.4. 鼓動</a>
-			</ol>
-		</section>
-	</section>
-	
-	<section>
-		<h1>7. 三次元</h1>
-		<section>
-			<ol>
-				<li><a href="sample/7/7-1.html">7.1. 回転の三次元</a>
-				<li><a href="sample/7/7-2-1.html">7.2.1 回転の三次元アニメーション</a>
-				<li><a href="sample/7/7-2-2.html">7.2.2 伸縮の三次元アニメーション</a>
-				<li><a href="sample/7/7-2-3.html">7.2.3 移動の三次元アニメーション</a>
-			</ol>
-		</section>
-	</section>
-	
-	<section>
-		<h1>8.JavaScript連携</h1>
-		<section>
-			<ol>
-				<li><a href="sample/8/8-1.html">8.1. JS連携</a>
-			</ol>
-		</section>
-	</section>
-	
-</section>
-</main>
-</div>
+		li:nth-of-type(odd){background-color:#eee;}
+
+		a{color:red}
+		a:visited{color:gray;}
+
+		header{
+			height:110px;
+			line-height:50px;
+			background-color:#666;color:#fff;
+		}
+
+		header h1{
+			font-size:1.2em;text-align:center;
+		}
+		header h2{
+			font-size:1.1em;text-align:center;
+		}
+		section>section{
+			margin:0.5em;
+			border:1px solid gray;
+			padding:0.5em;
+		}
+		
+		section h1{
+			margin:1em 0 0 0;
+		}
+
+		small{font-size:0.7em;color:red;}
+
+		.flex{display: flex;}
+		.flex>section{flex:1;}
+
+		footer{background-color: black;}
+		footer p{text-align:center;}
+		footer small{font-size:1em;line-height:2em;}
+		footer a{color:white;}
+
+		@media(max-width:600px){
+			.flex{display: block;}
+		}
+	</style>
+</head>
+<body>
+	<div id=wrap>
+		<header>
+			<h1>楽しいWebアニメーション<br>授業ページ</h1>
+		</header>
+
+		<main>
+
+			<section>
+				<section>
+					<h2>教材</h2>
+					<ol>
+						<li><a target=_blank href="https://cs264.xbit.jp/~w074265/yashima/webanime/js/index.html">練習テキストエディタ（練習くん）</a></li>
+						<li><a target=_blank href="sozai/index.html">練習用素材</a></li>
+					</ol>	
+				</section>
+
+				<div class="flex">
+					<section>
+						<h1>1. 触れてみよう</h1>
+						<section>
+
+							<ol>
+								<li>1. <a target="_blank" href="http://www.css-spinners.com/#/spinners/">スピナー</a>
+								<li>2. <a target="_blank" href="https://lab.sonicmoov.com/markup/css/css-animation-20/">使えるCSSアニメーション20選</a>
+								<li>3. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/tictac/index.html">メトロノーム</a>
+								<li>4. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carousel/index.html">カルーセル</a>
+								<li>5. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/sakkaku/index.html">錯覚</a>
+								<li>6. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/momiji/index.html">もみじ</a>
+								<li>7. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/soccer/index.html">サッカーボール</a>
+								<li>8. <a target="_blank" href="https://tokyoappwork.shop/showcase/css3/animation/CSSSanta/index.html">CSSサンタ</a>
+								<li>9. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carp/index.html">鯉のぼり</a>
+								<li>10. <a target="_blank" href="https://tokyoappwork.shop/showcase/css3/animation/3d/domino/index.html">3D①</a>
+								<li>11. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">3D②</a>
+								<li>12. <a target="_blank" href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">3Dコントロール</a>
+							</ol>
+						</section>
+					</section>
+					
+					
+					<section>
+						<h1>2. 事前知識</h1>
+						<section>
+							<ol>
+								<li><a href="sample/2/2-1.html">2.1. HTMLの基本</a>
+								<li><a href="sample/2/2-2.html">2.2. CSSの基本</a>
+								<li><a href="sample/2/2-3.html">2.2. セレクタ</a>
+							</ol>
+						</section>
+					</section>
+		
+					<section>
+						<h1>3. いろいろなCSS</h1>
+						<section>
+							<ol>
+								<li><a href="sample/3/3-1.html">3.1. ボックスモデル</a>
+								<li><a href="sample/3/3-2.html">3.2. 上下中央寄せ</a>
+								<li><a href="sample/3/3-3-1.html">3.3.1. 角丸</a>
+								<li><a href="sample/3/3-3-2.html">3.3.2. 影</a>
+								<li><a href="sample/3/3-3-3.html">3.3.3. 花の模様</a>
+								<li><a href="sample/3/3-3-4.html">3.3.4. グラデーション</a>
+								<li><a href="sample/3/3-3-5.html">3.3.5. 三角形</a>
+								<li><a href="sample/3/3-4-1.html">3.4.1. 背景画像</a>
+								<li><a href="sample/3/3-4-2.html">3.4.2. 背景画像に影</a>
+							</ol>
+						</section>
+					</section>
+
+				</div>
+				<div class="flex">		
+					<section>
+						<h1>4. 変形</h1>
+						<section>
+							<ol>
+								<li><a href="sample/4/4-1.html">4.1 回転</a>
+								<li><a href="sample/4/4-2.html">4.2 伸縮</a>
+								<li><a href="sample/4/4-3.html">4.3 歪み</a>
+								<li><a href="sample/4/4-4.html">4.4 移動</a>
+								<li><a href="sample/4/4-5.html">4.5 合成</a>
+							</ol>
+						</section>
+					</section>
+					
+					<section>
+						<h1>5. 遷移</h1>
+						<section>
+							<ol>
+								<li><a href="sample/5/5-1.html">5.1. CSS+トランジション</a>
+								<li><a href="sample/5/5-2.html">5.2. 変形+トランジション</a>
+							</ol>
+						</section>
+					</section>
+
+				</div>
+				<div class="flex">	
+					
+					<section>
+						<h1>6. アニメーション</h1>
+						<section>
+							<ol>
+								<li><a href="sample/6/6-1.html">6.1. 基本的な記述</a>
+								<li><a href="sample/6/6-2.html">6.2. スピナー</a>
+								<li><a href="sample/6/6-3.html">6.3. カルーセル</a>
+								<li><a href="sample/6/6-4.html">6.4. 鼓動</a>
+							</ol>
+						</section>
+					</section>
+					
+
+					<section>
+						<h1>7. 三次元</h1>
+						<section>
+							<ol>
+								<li><a href="sample/7/7-1.html">7.1. 回転の三次元</a>
+								<li><a href="sample/7/7-2-1.html">7.2.1 回転の三次元アニメーション</a>
+								<li><a href="sample/7/7-2-2.html">7.2.2 伸縮の三次元アニメーション</a>
+								<li><a href="sample/7/7-2-3.html">7.2.3 移動の三次元アニメーション</a>
+							</ol>
+						</section>
+					</section>
+
+				</div>
+				<div class="flex">
+					
+					<section>
+						<h1>8.JavaScript連携</h1>
+						<section>
+							<ol>
+								<li><a href="sample/8/8-1.html">8.1. JS連携</a>
+							</ol>
+						</section>
+					</section>
+
+					<section>
+						<h1>9.参考</h1>
+						<section>
+							<h2>サンプルページ</h2>
+							<ol>
+								<li><a target=_blank href="https://nakashimmer.github.io/showcase/">HTML5 Showcase</a></li>
+							</ol>
+							<h2>検証ツール</h2>
+							<ol>
+								<li><a target=_blank href="https://validator.w3.org/">W3C HTML検証</a></li>
+								<li><a target=_blank href="https://jigsaw.w3.org/css-validator/validator.html.ja">W3C CSS検証</a></li>
+							</ol>
+						
+							<h2>更に学びを深める</h2>
+							<ol>
+								<li>なかしまぁ先生のHTML5教室
+									<a href="https://www.amazon.co.jp/dp/4802096607/">amazon</a></li>
+								
+								</li>
+								<li><a target=_blank href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">一日まるごとどっぷりHTML5教室(リアル教室)</a></li>
+							</ol>
+						</section>
+					</section>
+
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p><small><a href="https://www.facebook.com/NakashimaShunji/">(C)中島俊治</a></small></p>
+		</footer>
+	</div>
+
+</body>
+</html>
