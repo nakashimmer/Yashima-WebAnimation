@@ -22,14 +22,36 @@
 		a:visited{color:gray;}
 
 		header{
-			height:110px;
 			line-height:50px;
 			background-color:#666;color:#fff;
 		}
 
 		header h1{
-			font-size:1.2em;text-align:center;
+			font-size:1.3em;line-height:6em;
+			text-align:center;
+			background:url(yashiman.png) no-repeat;
+			background-size:auto 100%;
+			background-position:100% 0;
+			animation:yashimaru 10s linear 10s 1 normal;
 		}
+
+		@keyframes yashimaru{
+			50%{background-position:20% 0;}
+			70%{background-position:10% 0;}
+			72%{background-position:12% 0;}
+			74%{background-position:10% 0;
+				background-image:url(yashiman.png);
+			}
+			74.5%{background-image:url(yashimaru.png);}
+			80%{background-position:15% 0;}
+			82%{background-position:20% 0;}
+			90%{background-position:20% 0;}
+			93%{background-position:100% 0;}
+			95%{background-position:20% 0;}
+			96%{background-image:url(yashimaru.png);}
+			97%{background-image:url(yashiman.png);}
+		}
+
 		header h2{
 			font-size:1.1em;text-align:center;
 		}
@@ -41,6 +63,17 @@
 		
 		section h1{
 			margin:1em 0 0 0;
+		}
+
+		li a{
+			display:block;
+			line-height:2em;
+		}
+		li a:hover{
+			color:white;
+			background-color: rgba(0,0,0,0.5);
+			transform: scale(1.1,1.1);
+			text-indent:5%;
 		}
 
 		small{font-size:0.7em;color:red;}
@@ -61,7 +94,7 @@
 <body>
 	<div id=wrap>
 		<header>
-			<h1>楽しいWebアニメーション<br>授業ページ</h1>
+			<h1>楽しいWebアニメーション授業ページ</h1>
 		</header>
 
 		<main>
@@ -80,18 +113,18 @@
 						<section>
 
 							<ol>
-								<li>1. <a target="_blank" href="http://www.css-spinners.com/#/spinners/">スピナー</a>
-								<li>2. <a target="_blank" href="https://lab.sonicmoov.com/markup/css/css-animation-20/">使えるCSSアニメーション20選</a>
-								<li>3. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/tictac/index.html">メトロノーム</a>
-								<li>4. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carousel/index.html">カルーセル</a>
-								<li>5. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/sakkaku/index.html">錯覚</a>
-								<li>6. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/momiji/index.html">もみじ</a>
-								<li>7. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/soccer/index.html">サッカーボール</a>
-								<li>8. <a target="_blank" href="https://tokyoappwork.shop/showcase/css3/animation/CSSSanta/index.html">CSSサンタ</a>
-								<li>9. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carp/index.html">鯉のぼり</a>
-								<li>10. <a target="_blank" href="https://tokyoappwork.shop/showcase/css3/animation/3d/domino/index.html">3D①</a>
-								<li>11. <a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">3D②</a>
-								<li>12. <a target="_blank" href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">3Dコントロール</a>
+								<li><a target="_blank" href="http://www.css-spinners.com/#/spinners/">1. スピナー</a>
+						
+								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/tictac/index.html">2. メトロノーム</a>
+								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carousel/index.html">3. カルーセル</a>
+								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/sakkaku/index.html">4. 錯覚</a>
+								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/momiji/index.html">5. もみじ</a>
+								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/soccer/index.html">6. サッカーボール</a>
+								<li><a target="_blank" href="https://tokyoappwork.shop/showcase/css3/animation/CSSSanta/index.html">7. CSSサンタ</a>
+								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carp/index.html">8. 鯉のぼり</a>
+								<li><a target="_blank" href="https://tokyoappwork.shop/showcase/css3/animation/3d/domino/index.html">9. 3D①</a>
+								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">10. 3D②</a>
+								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">11. 3Dコントロール</a>
 							</ol>
 						</section>
 					</section>
@@ -205,8 +238,8 @@
 						
 							<h2>更に学びを深める</h2>
 							<ol>
-								<li>📚なかしまぁ先生のHTML5教室
-									<a href="https://www.amazon.co.jp/dp/4802096607/">amazon</a></li>
+								<li>
+									<a href="https://www.amazon.co.jp/dp/4802096607/">📚なかしまぁ先生のHTML5教室(amazon)</a></li>
 								
 								</li>
 								<li><a target=_blank href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">一日まるごとどっぷりHTML5教室(リアル教室)</a></li>
