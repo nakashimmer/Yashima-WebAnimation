@@ -1,260 +1,293 @@
 <!DOCTYPE html">
 <html>
-<head>
-	<meta charset=utf-8>
-	<title>授業ページ|楽しいWebアニメーション</title>
-
-	<style>
-		*{
-			margin:0;padding:0;
-			font-size:16px;
-			text-decoration:none;
-			list-style:none;
-		}
-		#wrap{margin:10px auto;padding:5px;max-width:800px;}
-
-		
-		li{padding:0.25em;}
-		
-		li:nth-of-type(odd){background-color:#eee;}
-
-		a{color:red}
-		a:visited{color:gray;}
-
-		header{
-			line-height:50px;
-			background-color:#666;color:#fff;
-		}
-
-		header h1{
-			font-size:1.3em;line-height:6em;
-			text-align:center;
-			background:url(yashiman.png) no-repeat;
-			background-size:auto 100%;
-			background-position:100% 0;
-			animation:yashimaru 10s linear 10s 1 normal;
-		}
-
-		@keyframes yashimaru{
-			50%{background-position:20% 0;}
-			70%{background-position:10% 0;}
-			72%{background-position:12% 0;}
-			74%{background-position:10% 0;
-				background-image:url(yashiman.png);
+	<head>
+		<!-- Google Analytics -->
+		<script src="./ga.js"></script>
+		<link rel="icon" href="favicon.ico">
+		<meta charset=utf-8>
+		<title>授業ページ|楽しいWebアニメーション</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+				list-style-type: none;
 			}
-			74.5%{background-image:url(yashimaru.png);}
-			80%{background-position:15% 0;}
-			82%{background-position:20% 0;}
-			90%{background-position:20% 0;}
-			93%{background-position:100% 0;}
-			95%{background-position:20% 0;}
-			96%{background-image:url(yashimaru.png);}
-			97%{background-image:url(yashiman.png);}
-		}
 
-		header h2{
-			font-size:1.1em;text-align:center;
-		}
-		section>section{
-			margin:0.5em;
-			border:1px solid gray;
-			padding:0.5em;
-		}
-		
-		section h1{
-			margin:1em 0 0 0;
-		}
+			body {
+				background-color: #666;
+				color: white;
+			}
 
-		li a{
-			display:block;
-			line-height:2em;
-		}
-		li a:hover{
-			color:white;
-			background-color: rgba(0,0,0,0.5);
-			transform: scale(1.1,1.1);
-			text-indent:5%;
-		}
+			header h1 {
+				text-shadow: 3px 3px 3px black;
+				font-size: 1.3em;
+				line-height: 6em;
+				text-align: center;
+				background: url(yashiman.png) no-repeat;
+				background-size: auto 100%;
+				background-position: 100% 0;
+				animation: yashimaru 10s linear 10s 1 normal;
+			}
 
-		small{font-size:0.7em;color:red;}
+			@keyframes yashimaru {
+				50% {
+					background-position: 20% 0;
+				}
 
-		.flex{display: flex;}
-		.flex>section{flex:1;}
+				70% {
+					background-position: 10% 0;
+				}
 
-		footer{background-color: black;}
-		footer p{text-align:center;}
-		footer small{font-size:1em;line-height:2em;}
-		footer a{color:white;}
+				72% {
+					background-position: 12% 0;
+				}
 
-		@media(max-width:600px){
-			.flex{display: block;}
-		}
-	</style>
-</head>
-<body>
-	<div id=wrap>
-		<header>
-			<h1>楽しいWebアニメーション授業ページ</h1>
-		</header>
+				74% {
+					background-position: 10% 0;
+					background-image: url(yashiman.png);
+				}
 
-		<main>
+				74.5% {
+					background-image: url(yashimaru.png);
+				}
 
-			<section>
-				<section>
-					<h2>教材</h2>
-					<ol>
-						<li><a target=_blank href="https://renshukun.azurewebsites.net/yashima/cssAnime/">オンライン簡易テキストエディタ（練習くん）</a></li>
-					</ol>	
-				</section>
+				80% {
+					background-position: 15% 0;
+				}
 
-				<div class="flex">
-					<section>
-						<h1>1. 触れてみよう</h1>
-						<section>
+				82% {
+					background-position: 20% 0;
+				}
 
-							<ol>
-								<li><a target="_blank" href="http://www.css-spinners.com/#/spinners/">1. スピナー</a>
-						
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/tictac/index.html">2. メトロノーム</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carousel/index.html">3. カルーセル</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/sakkaku/index.html">4. 錯覚</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/momiji/index.html">5. もみじ</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/soccer/index.html">6. サッカーボール</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/CSSSanta/index.html">7. CSSサンタ</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/carp/index.html">8. 鯉のぼり</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/3d/domino/index.html">9. 3D①</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">10. 3D②</a>
-								<li><a target="_blank" href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">11. 3Dコントロール</a>
-							</ol>
-						</section>
-					</section>
-					
-					
-					<section>
-						<h1>2. 事前知識</h1>
-						<section>
-							<ol>
-								<li><a href="sample/2/2-1.html">2.1. HTMLの基本</a>
-								<li><a href="sample/2/2-2.html">2.2. CSSの基本</a>
-								<li><a href="sample/2/2-3.html">2.2. セレクタ</a>
-							</ol>
-						</section>
-					</section>
-		
-					<section>
-						<h1>3. いろいろなCSS</h1>
-						<section>
-							<ol>
-								<li><a href="sample/3/3-1.html">3.1. ボックスモデル</a>
-								<li><a href="sample/3/3-2.html">3.2. 上下中央寄せ</a>
-								<li><a href="sample/3/3-3-1.html">3.3.1. 角丸</a>
-								<li><a href="sample/3/3-3-2.html">3.3.2. 影</a>
-								<li><a href="sample/3/3-3-3.html">3.3.3. 花の模様</a>
-								<li><a href="sample/3/3-3-4.html">3.3.4. グラデーション</a>
-								<li><a href="sample/3/3-3-5.html">3.3.5. 三角形</a>
-								<li><a href="sample/3/3-4-1.html">3.4.1. 背景画像</a>
-								<li><a href="sample/3/3-4-2.html">3.4.2. 背景画像に影</a>
-							</ol>
-						</section>
-					</section>
+				90% {
+					background-position: 20% 0;
+				}
 
-				</div>
-				<div class="flex">		
-					<section>
-						<h1>4. 変形</h1>
-						<section>
-							<ol>
-								<li><a href="sample/4/4-1.html">4.1 回転</a>
-								<li><a href="sample/4/4-2.html">4.2 伸縮</a>
-								<li><a href="sample/4/4-3.html">4.3 歪み</a>
-								<li><a href="sample/4/4-4.html">4.4 移動</a>
-								<li><a href="sample/4/4-5.html">4.5 合成</a>
-							</ol>
-						</section>
-					</section>
-					
-					<section>
-						<h1>5. 遷移</h1>
-						<section>
-							<ol>
-								<li><a href="sample/5/5-1.html">5.1. CSS+トランジション</a>
-								<li><a href="sample/5/5-2.html">5.2. 変形+トランジション</a>
-							</ol>
-						</section>
-					</section>
+				93% {
+					background-position: 100% 0;
+				}
 
-				</div>
-				<div class="flex">	
-					
-					<section>
-						<h1>6. アニメーション</h1>
-						<section>
-							<ol>
-								<li><a href="sample/6/6-1.html">6.1. 基本的な記述</a>
-								<li><a href="sample/6/6-2.html">6.2. スピナー</a>
-								<li><a href="sample/6/6-3.html">6.3. カルーセル</a>
-								<li><a href="sample/6/6-4.html">6.4. 鼓動</a>
-							</ol>
-						</section>
-					</section>
-					
+				95% {
+					background-position: 20% 0;
+				}
 
-					<section>
-						<h1>7. 三次元</h1>
-						<section>
-							<ol>
-								<li><a href="sample/7/7-1.html">7.1. 回転の三次元</a>
-								<li><a href="sample/7/7-2-1.html">7.2.1 回転の三次元アニメーション</a>
-								<li><a href="sample/7/7-2-2.html">7.2.2 伸縮の三次元アニメーション</a>
-								<li><a href="sample/7/7-2-3.html">7.2.3 移動の三次元アニメーション</a>
-							</ol>
-						</section>
-					</section>
+				96% {
+					background-image: url(yashimaru.png);
+				}
 
+				97% {
+					background-image: url(yashiman.png);
+				}
+			}
+
+			header p {
+				background-color: #eee;
+				padding: 5px;
+				border-radius: 20px;
+				text-align: center;
+				margin: 3px 0;
+			}
+
+			#wrap {
+				max-width: 800px;
+				margin: 0 auto;
+			}
+
+			h3,
+			h4 {
+				text-indent: 0.5em;
+				padding-top: 10px;
+			}
+
+			section {
+				margin: 5px;
+				border: 1px solid gray;
+				border-radius: 10px;
+				overflow: hidden;
+				flex: 1;
+				background-color: #333;
+			}
+
+			section h2 {
+				background-color: #111;
+				padding: 5px;
+				line-height: 3em;
+				text-indent: 1em;
+			}
+
+			ol {
+				list-style: none;
+				margin: 10px;
+			}
+
+			.flex {
+				display: flex;
+			}
+
+			footer {
+				text-align: center;
+			}
+
+			li::before {
+				content: "🍎"
+			}
+
+			li:hover::before {
+				content: "🍏"
+			}
+
+			a {
+				text-decoration: none;
+				color: skyblue;
+			}
+
+			li:hover a {
+				color: lime;
+			}
+
+			#shusei {
+				border: 3px dotted white;
+				border-radius: 1em;
+				padding: 0.5em;
+				margin: 5px;
+			}
+
+			@media(max-width:600px) {
+				.flex {
+					display: block;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<h1>楽しいWebアニメーション 授業ページ</h1>
+			</header>
+			<main>
+				<div id="shusei">
+					<h2>訂正のお知らせ</h2>
+					<ul>
+						<li>・・・</li>
+					</ul>
 				</div>
 				<div class="flex">
-					
 					<section>
-						<h1>8.JavaScript連携</h1>
-						<section>
-							<ol>
-								<li><a href="sample/8/8-1.html">8.1. JS連携</a>
-							</ol>
-						</section>
+						<h2>1. 触れてみよう</h2>
+						<ol>
+							<li><a href="http://www.css-spinners.com/#/spinners/">1. スピナー</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/tictac/index.html">2. メトロノーム</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/carousel/index.html">3. カルーセル</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/sakkaku/index.html">4. 錯覚</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/momiji/index.html">5. もみじ</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/soccer/index.html">6. サッカーボール</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/CSSSanta/index.html">7. CSSサンタ</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/carp/index.html">8. 鯉のぼり</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/3d/domino/index.html">9. 3D①</a>
+							<li><a href="https://nakashimmer.github.io/showcase/css3/animation/3d/cube/index.html">10. 3D②</a>
+							<li><a href="https://nakashimmer.github.io/showcase/JS/dom/css/index3.html">11. 3Dコントロール</a>
+						</ol>
 					</section>
-
 					<section>
-						<h1>9.参考</h1>
-						<section>
-							<h2>サンプルページ</h2>
-							<ol>
-								<li><a target=_blank href="https://nakashimmer.github.io/showcase/">HTML5 Showcase</a></li>
-							</ol>
-							<h2>検証ツール</h2>
-							<ol>
-								<li><a target=_blank href="https://validator.w3.org/">W3C HTML検証</a></li>
-								<li><a target=_blank href="https://jigsaw.w3.org/css-validator/validator.html.ja">W3C CSS検証</a></li>
-							</ol>
-						
-							<h2>更に学びを深める</h2>
-							<ol>
-								<li>
-									<a href="https://www.amazon.co.jp/dp/4802096607/">📚なかしまぁ先生のHTML5教室(amazon)</a></li>
-								
-								</li>
-								<li><a target=_blank href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">一日まるごとどっぷりHTML5教室(リアル教室)</a></li>
-							</ol>
-						</section>
+						<h2>2. 事前知識</h2>
+						<ol>
+							<li><a href="sample/2/2-1.html">2.1. HTMLの基本</a>
+							<li><a href="sample/2/2-2.html">2.2. CSSの基本</a>
+							<li><a href="sample/2/2-3.html">2.2. セレクタ</a>
+						</ol>
+						<h3>テキストエディタ</h3>
+						<ol>
+							<li><a target=_blank
+									href="https://renshukun.azurewebsites.net/yashima/cssAnime/">オンライン簡易テキストエディタ（練習くん）</a></li>
+						</ol>
 					</section>
-
+					<section>
+						<h2>3. いろいろなCSS</h2>
+						<ol>
+							<li><a href="sample/3/3-1.html">3.1. ボックスモデル</a>
+							<li><a href="sample/3/3-2.html">3.2. 上下中央寄せ</a>
+							<li><a href="sample/3/3-3-1.html">3.3.1. 角丸</a>
+							<li><a href="sample/3/3-3-2.html">3.3.2. 影</a>
+							<li><a href="sample/3/3-3-3.html">3.3.3. 花の模様</a>
+							<li><a href="sample/3/3-3-4.html">3.3.4. グラデーション</a>
+							<li><a href="sample/3/3-3-5.html">3.3.5. 三角形</a>
+							<li><a href="sample/3/3-4-1.html">3.4.1. 背景画像</a>
+							<li><a href="sample/3/3-4-2.html">3.4.2. 背景画像に影</a>
+						</ol>
+					</section>
 				</div>
-			</section>
-		</main>
-
-		<footer>
-			<p><small><a href="https://www.facebook.com/NakashimaShunji/">(C)中島俊治</a></small></p>
-		</footer>
-	</div>
-
-</body>
+				<div class="flex">
+					<section>
+						<h2>4. 変形</h2>
+						<ol>
+							<li><a href="sample/4/4-1.html">4.1 回転</a>
+							<li><a href="sample/4/4-2.html">4.2 伸縮</a>
+							<li><a href="sample/4/4-3.html">4.3 歪み</a>
+							<li><a href="sample/4/4-4.html">4.4 移動</a>
+							<li><a href="sample/4/4-5.html">4.5 合成</a>
+						</ol>
+					</section>
+					<section>
+						<h2>5. 遷移</h2>
+						<ol>
+							<li><a href="sample/5/5-1.html">5.1. CSS+トランジション</a>
+							<li><a href="sample/5/5-2.html">5.2. 変形+トランジション</a>
+						</ol>
+					</section>
+					<section>
+						<h2>6. アニメーション</h2>
+						<ol>
+							<li><a href="sample/6/6-1.html">6.1. 基本的な記述</a>
+							<li><a href="sample/6/6-2.html">6.2. スピナー</a>
+							<li><a href="sample/6/6-3.html">6.3. カルーセル</a>
+							<li><a href="sample/6/6-4.html">6.4. 鼓動</a>
+						</ol>
+					</section>
+				</div>
+				<div class="flex">
+					<section>
+						<h2>7. 三次元</h2>
+						<ol>
+							<li><a href="sample/7/7-1.html">7.1. 回転の三次元</a>
+							<li><a href="sample/7/7-2-1.html">7.2.1 回転の三次元アニメーション</a>
+							<li><a href="sample/7/7-2-2.html">7.2.2 伸縮の三次元アニメーション</a>
+							<li><a href="sample/7/7-2-3.html">7.2.3 移動の三次元アニメーション</a>
+						</ol>
+					</section>
+					<section>
+						<h2>8.JavaScript連携</h2>
+						<ol>
+							<li><a href="sample/8/8-1.html">8.1. JS連携</a>
+						</ol>
+					</section>
+					<section>
+						<h2>9.参考</h2>
+						<h3>サンプルページ</h3>
+						<ol>
+							<li><a target=_blank href="https://nakashimmer.github.io/showcase/">HTML5 Showcase</a></li>
+						</ol>
+						<h3>検証ツール</h3>
+						<ol>
+							<li><a target=_blank href="https://validator.w3.org/">W3C HTML検証</a></li>
+							<li><a target=_blank href="https://jigsaw.w3.org/css-validator/validator.html.ja">W3C CSS検証</a></li>
+						</ol>
+						<h3>更に学びを深める</h3>
+						<ol>
+							<li>
+								<a href="https://www.amazon.co.jp/dp/4802096607/">📚なかしまぁ先生のHTML5教室(amazon)</a>
+							</li>
+							</li>
+							<li><a target=_blank
+									href="https://www.street-academy.com/steachers/1274?conversion_name=direct_message&tracking_code=f3037c532c76e32eb5636350d0147bc9">一日まるごとどっぷりHTML5教室(リアル教室)</a>
+							</li>
+						</ol>
+					</section>
+				</div>
+			</main>
+			<footer>
+				<p><small>(C)八洲学園大学 中島俊治</a></small></p>
+			</footer>
+		</div>
+	</body>
 </html>
